@@ -1,0 +1,81 @@
+.about-container {
+  font-family: 'Poppins', sans-serif;
+  color: #1a1a1a;
+  background: linear-gradient(to right, rgb(168, 197, 222), rgb(178, 216, 117) );
+  padding: 4rem 2rem;
+}
+
+/* Hero Section */
+.about-hero {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ff6f61; /* Figma primary color */
+  margin-bottom: 1rem;
+}
+
+.about-hero p {
+  font-size: 1.5rem;
+  color: #4a4a4a;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Brand Story Section */
+.about-content {
+  display: flex;
+  align-items: flex-start;  
+  justify-content: space-between;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+
+.about-text {
+  max-width: 600px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #bf3d32;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  color: #4a4a4a;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.about-image img {
+  width: 100%;          /* Keep responsive */
+  max-width: 700px;     /* Increase from previous 500px */
+  border-radius: 1rem;
+  object-fit: cover;
+  margin: 0 auto;       /* Center on smaller screens */
+}
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  .about-image img {
+    max-width: 80%;
+    margin: 0 auto 2rem;
+  }
+}

@@ -1,0 +1,82 @@
+/* Signup.css */
+
+.signup-container {
+  font-family: 'Poppins', sans-serif; /* Figma font */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Full screen */
+  background-color: #F8F8F8; 
+  padding: 2rem;
+  text-align: center;
+}
+
+.signup-container h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.signup-container p {
+  font-size: 1.125rem;
+  color: #4a4a4a;
+  margin-bottom: 2rem;
+}
+
+.signup-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 400px; /* Form width */
+}
+
+.signup-container input {
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.signup-container input:focus {
+  border-color: #ff6f61; /* Figma primary color on focus */
+}
+
+.signup-container button {
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #ff6f61; /* Figma primary color */
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.signup-container button:hover {
+  background-color: #e65b50; /* Slightly darker on hover */
+  transform: translateY(-2px);
+}
+
+.signup-container .login-link {
+  color: #ff6f61;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.signup-container .login-link:hover {
+  color: #e65b50;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .signup-container form {
+    width: 90%;
+  }
+}

@@ -1,0 +1,76 @@
+.landing {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(to right, #50c878, #ffd700); /* emerald → gold */
+  color: #fff;
+}
+
+.landing-image {
+  flex: 1;
+  position: relative; /* allow absolute positioning */
+  height: 100vh;
+}
+
+.landing-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-text {
+  position: absolute;
+  top: 50%; /* vertically center */
+  left: 50%; /* horizontally center */
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.image-text h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #000; 
+  background: rgba(255, 255, 255, 0.6); /* semi-transparent bg for readability */
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.landing-content h2 {
+  font-size: 2.0rem;
+  font-style: italics;
+  color:#000;
+}
+
+.landing-content {
+  flex: 1;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.landing-content p {
+  font-size: 1.3rem;
+  line-height: 2.0;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.landing-content a {
+  margin-top: 50px;
+  padding: 14px 28px;
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.landing-content a:hover {
+  background-color: #000;
+} 
+.arrow{
+
+  
+}

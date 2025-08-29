@@ -1,15 +1,18 @@
-// src/pages/Contacts.tsx
+import '../styles/Contact.css';
+
 function Contacts() {
   return (
-    <div>
-      <h1>Contact Page</h1>
+    <div className="contacts-container">
+      <h1>Contact Us</h1>
+      <h3>We are just a call away</h3>
 
-      <h3>Always a call away </h3>
-      <p>Phone : @+234......</p>
-      <p>FaceBook @ Owole's Empire</p>
-      <p>LinkedIn : @ Josephine....</p>
+      <div className="contact-details">
+        <p>Phone: +234 123 456 7890</p>
+        <p>Facebook: Owole's Empire</p>
+        <p>LinkedIn: Josephine</p>
+      </div>
     </div>
   );
 }
 
-export default Contacts;  
+export default Contacts;

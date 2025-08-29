@@ -1,28 +1,29 @@
 import type { BagItem } from '../types/bag';
+import Bag1 from '../assets/Products/bag1.jpg';
+import Bag2 from '../assets/Products/bag2.jpg';
+import Bag3 from '../assets/Products/bag3.jpg';
+import Bag4 from '../assets/Products/bag4.jpg';
+import Bag5 from '../assets/Products/bag5.jpg';
+import Bag6 from '../assets/Products/bag6.jpg';
+import Bag7 from '../assets/Products/bag7.jpg';
+import Bag8 from '../assets/Products/bag8.jpg';
+import Bag9 from '../assets/Products/bag9.jpg';
+import Bag10 from '../assets/Products/bag10.jpg';
 
 
- const bags: BagItem[] = [
-  {
-    id: 1,
-    slug: 'Goyard Exotic',
-    name: 'Goyard Exotic Bag',
-    image: '/assets/Images/Products/bag1.jpg',
-    description: 'A stylish sweat top made with love and a very royal color.',
-    price : 15000,
-  },
-  {
-    id: 2,
-    slug: 'elegant',
-    name: 'Elegant Bag',
-    image: '/assets/Images/products/bag2.jpg',
-    description: 'Elegant Dress for classic women.',
+
+ const bagsData: BagItem[] = [
+  {id: 1,slug: 'Goyard Exotic', name: 'Goyard Exotic Bag', image: Bag1, description: 'A stylish sweat top made with love and a very royal color.',
+    price : 15000,},
+  {id: 2, slug: 'elegant',name: 'Elegant Bag',image: Bag2,
+description: 'Elegant Dress for classic women.',
     price: 5000,
   },
   {
     id: 3,
     slug: 'classy',
     name: 'Classy Bag',
-    image: '/assets/Images/products/bag3.jpg',
+    image: Bag3,
     description: 'This classy Jumpsuit is only for classy women.',
     price: 7000,
   },
@@ -30,15 +31,12 @@ import type { BagItem } from '../types/bag';
     id: 4,
     slug: 'hoodie',
     name: 'Luxurios Hoodie Bag',
-    image: '/assets/Images/products/bag4.jpg',
+    image: Bag4,
     description: 'Keep warm while maintaining your carriage',
     price: 20000
   },
-  {
-    id: 5,
-    slug: 'luxury',
-    name: 'Luxurious Bag',
-  image: '/assets/Images/products/bag5.jpg',
+  { id: 5,slug: 'luxury',
+    name: 'Luxurious Bag', image: Bag5,
     description: 'Elegant Dress for classic women.',
     price: 8000,
   },
@@ -46,7 +44,7 @@ import type { BagItem } from '../types/bag';
     id: 6,
     slug: 'collections',
     name: 'Beautiful Collection bag',
-   image: '/assets/Images/products/bag6.jpg',
+   image:  Bag6 ,
     description: 'Solve all your fashion challenge in our one stop store.',
     price: 300,
   },
@@ -54,7 +52,7 @@ import type { BagItem } from '../types/bag';
     id: 7,
     slug: 'collections',
     name: 'Beautiful Collection bag',
-   image: '/assets/Images/products/bag7.jpg',
+   image: Bag7,
     description: 'Solve all your fashion challenge in our one stop store.',
     price: 300,
   },
@@ -62,7 +60,7 @@ import type { BagItem } from '../types/bag';
     id: 8,
     slug: 'collections',
     name: 'Beautiful Collection bag',
-   image: '/assets/Images/products/bag8.jpg',
+   image:  Bag8,
     description: 'Solve all your fashion challenge in our one stop store.',
     price: 300,
   },
@@ -70,7 +68,7 @@ import type { BagItem } from '../types/bag';
     id: 9,
     slug: 'collections',
     name: 'Beautiful Collection bag',
-   image: '/assets/Images/products/bag9.jpg',
+   image:  Bag9,
     description: 'Solve all your fashion challenge in our one stop store.',
     price: 300,
   },
@@ -78,10 +76,10 @@ import type { BagItem } from '../types/bag';
     id: 10,
     slug: 'collections',
     name: 'Beautiful Collection bag',
-   image: '/assets/Images/products/bag10.jpg',
+   image:  Bag10,
     description: 'Solve all your fashion challenge in our one stop store.',
     price: 300,
   },
 
 ];
-export default bags;
+export default bagsData;

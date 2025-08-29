@@ -1,0 +1,45 @@
+/* Contacts.css */
+
+.contacts-container {
+  font-family: 'Poppins', sans-serif; /* Figma font */
+  color: #070606;
+  background-color: rgba(154, 132, 116, 0.671);
+  text-align: center;
+  padding: 10rem 2rem;
+}
+
+.contacts-container h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ff6f61; /* Figma primary color */
+  margin-bottom: 0rem;
+}
+
+.contacts-container h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #4a4a4a;
+}
+
+.contact-details p {
+  font-size: 1.5rem;
+  color: #4a4a4a;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contacts-container h1 {
+    font-size: 2.25rem;
+  }
+
+  .contacts-container h3 {
+    font-size: 1.5rem;
+  }
+
+  .contact-details p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,60 @@
+/* Products.css */
+
+.products-container {
+  font-family: 'Poppins', sans-serif;
+  color: #1a1a1a;
+  background-color: #ffffff; /* Figma background */
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.products-container h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-decoration: underline;
+  color: #ff6f61; /* Figma primary color */
+  margin-bottom: 3rem;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.category-card {
+  background-color: rgb(64, 91, 225);
+  border-radius: 1rem;
+  padding: 2rem 2em;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  background-color: #ffebe8; /* subtle Figma accent */
+}
+.category-card img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .categories {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .category-card {
+    width: 80%;
+    padding: 1.5rem 2rem;
+  }
+}

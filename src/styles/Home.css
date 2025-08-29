@@ -1,0 +1,80 @@
+
+.home-container {
+  font-family: 'Poppins', sans-serif; /* Figma font */
+  color: #1a1a1a;
+  background-color: #c0baba;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+/* Hero text */
+.home-container h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 4rem;
+  line-height: 1.2;
+}
+
+.home-container p {
+  font-size: 2rem;
+  color: #c93434;
+  margin-bottom: 4rem;
+  line-height: 1.5;
+}
+
+.home-container .product-images {
+  display: flex;
+  justify-content: center;
+  border-radius: 10rem;
+  image-rendering: auto;
+  height: 10rem;
+  gap: 6rem; 
+  margin: 2rem 0;
+  margin-bottom: 14rem;
+} 
+
+.home-container .product-images img {
+  width: 300px; 
+  height: 350px;
+  object-fit: cover;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.home-container .product-images img:hover {
+  transform: scale(1.05);
+}
+
+/* Signup link */
+.home-container .signup-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 2rem;
+  color: #9f251a; /* Figma primary color */
+  font-weight: 600;
+  text-decoration: underline;
+  transition: color 0.3s ease;  
+}
+
+.home-container .signup-link:hover {
+  color:  #0b0c0b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home-container h1 {
+    font-size: 2.25rem;
+  }
+
+  .home-container .product-images {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .home-container .product-images img {
+    width: 80%;
+    height: auto;
+  }
+}
