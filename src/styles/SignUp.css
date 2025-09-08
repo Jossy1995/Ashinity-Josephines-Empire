@@ -7,13 +7,13 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh; /* Full screen */
-  background-color: #F8F8F8; 
-  padding: 2rem;
+  background-color: #f8f8f8;
+  padding: 3rem 2rem;
   text-align: center;
 }
 
 .signup-container h3 {
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-weight: 700;
   margin-bottom: 1rem;
   color: #1a1a1a;
@@ -31,6 +31,10 @@
   gap: 1rem;
   width: 100%;
   max-width: 400px; /* Form width */
+  background: #fff; /* Card-like form */
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .signup-container input {
@@ -39,11 +43,12 @@
   border: 1px solid #ccc;
   font-size: 1rem;
   outline: none;
-  transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .signup-container input:focus {
   border-color: #ff6f61; /* Figma primary color on focus */
+  box-shadow: 0 0 0 3px rgba(255, 111, 97, 0.2);
 }
 
 .signup-container button {
@@ -64,6 +69,7 @@
 }
 
 .signup-container .login-link {
+  margin-top: 1rem;
   color: #ff6f61;
   text-decoration: underline;
   font-weight: 600;
@@ -76,7 +82,20 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .signup-container {
+    padding: 2rem 1rem;
+  }
+
   .signup-container form {
-    width: 90%;
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .signup-container h3 {
+    font-size: 1.8rem;
+  }
+
+  .signup-container p {
+    font-size: 1rem;
   }
 }

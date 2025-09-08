@@ -1,0 +1,131 @@
+/* ========================================
+   Global Defaults (Mobile First)
+======================================== */
+body {
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 0.5rem;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Containers should shrink gracefully */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+/* ========================================
+   Navbar
+======================================== */
+@media (max-width: 768px) {
+  nav > div:nth-child(2) {
+    display: none; /* hide desktop links */
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    border-radius: 5px;
+  }
+
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    padding: 1rem;
+    background: rgb(248, 238, 226);
+    border-top: 1px solid #eee;
+  }
+
+  .mobile-menu.active {
+    display: flex; /* toggled state */
+  }
+}
+
+/* ========================================
+   Products Page
+======================================== */
+@media (max-width: 1024px) {
+  .products-container h1 {
+    font-size: 2rem;
+  }
+
+  .categories {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .categories {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .category-card {
+    width: 90%;
+    padding: 1.2rem;
+    font-size: 1.1rem;
+  }
+
+  .category-card img {
+    max-height: 300px;
+  }
+}
+
+/* ========================================
+   Product Detail Page
+======================================== */
+@media (max-width: 768px) {
+  .product-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product-detail img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .product-info {
+    padding: 1rem;
+  }
+}
+
+/* ========================================
+   Footer
+======================================== */
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  footer .footer-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

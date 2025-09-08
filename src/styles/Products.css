@@ -1,5 +1,3 @@
-/* Products.css */
-
 .products-container {
   font-family: 'Poppins', sans-serif;
   color: #1a1a1a;
@@ -9,43 +7,58 @@
 }
 
 .products-container h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   text-decoration: underline;
   color: #ff6f61; /* Figma primary color */
   margin-bottom: 3rem;
 }
 
+/* Categories grid */
 .categories {
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  gap: 3rem;
   flex-wrap: wrap;
 }
 
 .category-card {
   background-color: rgb(64, 91, 225);
   border-radius: 1rem;
-  padding: 2rem 2em;
+  padding: 1.5rem;
   text-decoration: none;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
   transition: transform 0.3s ease, background-color 0.3s ease;
+  max-width: 320px; /* keep cards from being too wide */
+  flex: 1 1 250px;   /* make cards shrink on smaller screens */
 }
 
 .category-card:hover {
   transform: translateY(-5px);
   background-color: #ffebe8; /* subtle Figma accent */
 }
+
 .category-card img {
-  width: 300px;
-  height: 400px;
+  width: 100%;       /* responsive width */
+  height: auto;      /* let height adjust naturally */
+  max-height: 400px; /* keep it neat on desktop */
   object-fit: cover;
   border-radius: 1rem;
 }
 
-/* Responsive */
+/* ✅ Responsive for tablets and mobile */
+@media (max-width: 1024px) {
+  .categories {
+    gap: 2rem;
+  }
+
+  .products-container h1 {
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .categories {
     flex-direction: column;
@@ -54,7 +67,12 @@
   }
 
   .category-card {
-    width: 80%;
-    padding: 1.5rem 2rem;
+    width: 90%;
+    padding: 1.2rem;
+    font-size: 1.1rem;
+  }
+
+  .category-card img {
+    max-height: 300px; /* smaller images on phones */
   }
 }

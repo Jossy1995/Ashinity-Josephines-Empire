@@ -19,7 +19,7 @@
 
 .cart-items {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
 
@@ -120,5 +120,14 @@
 
   .cart-total {
     text-align: left;
+  }
+    .cart-container {
+    padding: 20px 10px;
+  }
+  .cart-total {
+    position: sticky;
+    bottom: 0;
+    background: #c0baba;
+    padding: 15px;
   }
 }

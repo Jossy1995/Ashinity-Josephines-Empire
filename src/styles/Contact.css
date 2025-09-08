@@ -5,14 +5,18 @@
   color: #070606;
   background-color: rgba(154, 132, 116, 0.671);
   text-align: center;
-  padding: 10rem 2rem;
+  padding: 6rem 2rem;
+  min-height: 100vh; /* fill screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .contacts-container h1 {
   font-size: 3rem;
   font-weight: 700;
   color: #ff6f61; /* Figma primary color */
-  margin-bottom: 0rem;
+  margin-bottom: 1.5rem; /* add breathing space */
 }
 
 .contacts-container h3 {
@@ -23,7 +27,7 @@
 }
 
 .contact-details p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #4a4a4a;
   margin-bottom: 1rem;
   line-height: 1.6;
@@ -31,12 +35,16 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .contacts-container {
+    padding: 4rem 1.5rem;
+  }
+
   .contacts-container h1 {
     font-size: 2.25rem;
   }
 
   .contacts-container h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .contact-details p {
